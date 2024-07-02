@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --white: white;
+  --aqua: #00cccc;
+  --pink: #db70d1;
+  
+}
+
+body{
+  background: linear-gradient(to right, #050b0d, #182c33, #1e3844);
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: var(--white);
+  font-weight: 300;
+}
+
+.container{
+  margin: 100px auto;
+  gap: 50px;
+  position: relative;
+}
+
+nav{
+  width: 100%;
+  overflow: hidden;
+  color: var(--white);
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  margin: 30px 0;
+}
+
+.btn{
+  background-color: var(--white);
+  color: black;
+  border-radius: 30px;
+  font-family: 'Roboto', sans-serif;
+  width: 150px;
+  height: 50px;
+  margin: 30px 2px;
+  transition: color .5s, background-color .5s, border .5s;
+}
+
+.btn-blue{
+  background-color: #00cccc;
+  color: var(--white);
+}
+
+.btn-pink{
+  background-color: #db70d1;
+  color: var(--white);
+}
+
+.btn-me{
+  width: 180px;
+}
+
+.btn-lg{
+  width: 200px;
+  height: 55px;
+  margin: 0;
+}
+
+.btn:hover{
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: white;
+}
+
+.nav{
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo{
+  background-image: url('img/logo1.png');
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-text{
+  font-size: 120px;
+  color: var(--white);
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 1rem;
+  text-shadow: rgb(255, 255, 255) 1px 0 2px;
+}
+
+.transparent-text{
+  -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    text-shadow: none;
+    font-family: "Poppins", sans-serif;
+
+}
+
+h2{
+  letter-spacing: .4rem;
+}
+
+.img-hero{
+  background-image: url('img/hero.gif');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.card{
+  color: var(--white);
+  background-color: transparent;
+}
+
+/*.card-a{
+ box-shadow: inset 0px 0px 12px 0px var(--aqua);
+}*/
+
+.card-serv{
+  box-shadow: none;
+}
+
+.card-body-serv{
+  width: 75%;
+  margin: auto;
+}
+
+.row{
+  margin: 100px auto;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.col{
+  justify-content: center;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  font-size: 22px;
+}
+
+.containerM{
+  margin: 300px auto;
+}
+
+.header-txt{
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.card i{
+  font-size: 60px;
+}
+
+.card span{
+  font-size: 90px;
+}
+
+.fa-star:before {
+  content: "\f005";
+  font-size: 20px;
+  color: var(--white);
+}
+
+.carousel-item{
+  padding: 10px;
+}
+
+li{
+  text-decoration: none;
+  list-style:none;
+}
+
+a{
+  text-decoration: none;
+  font-family: inherit;
+  color: white;
+}
+
+
+/*fyq*/
+.accordion {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  border-bottom: solid 1px white;
+}
+
+/*.activeAc, .accordion:hover {
+  box-shadow: 0px 0px 12px 0px var(--aqua);
+}*/
+
+.accordion:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.activeAc:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin: 20px;
+}
+
+.panel p{
+  font-family: inherit;
+  font-size: 20px;
+  color: white;
+}
+
+.Faq-link{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: underline;
+}
+
+
+.footer{
+  border-top: solid 0.5px white;
+}
+
+@media (max-width: 765px) {
+  .col{
+    width: 100%;
+    flex: 0 0 auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text{
+    font-size: 60px
+  }
+}
+
+@media (max-width: 444px){
+  nav .btn{
+    width: 46%;
+    height: 35px;
+    font-size: 12px;
+    line-height: 100%;
+  }
+
+  nav{
+    justify-content: space-evenly;
+  }
+
+  .hero-text{
+    font-size: 55px
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-text{
+    font-size: 45px;
+    letter-spacing: .3rem;
+  }
+}
