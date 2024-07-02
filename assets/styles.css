@@ -282,6 +282,12 @@ a{
   .hero-text{
     font-size: 55px
   }
+
+    .logo{
+    height: 65px;
+    width: 65px;
+    margin: auto;
+  }
 }
 
 @media (max-width: 400px) {
