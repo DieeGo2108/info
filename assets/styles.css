@@ -14,7 +14,7 @@
 }
 
 body{
-  background: linear-gradient(to right, #050b0d, #182c33, #1e3844);
+  background: /*linear-gradient(to right, #050b0d, #182c33, #1e3844)*/ black;
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
 }
